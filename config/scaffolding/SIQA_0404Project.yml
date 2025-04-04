@@ -8,12 +8,31 @@ packages:
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
 - name: JMS2waySSL
+  version: "1.0"
   gitServerName: kvv
   gitUrl: https://github.com/prabhakarsag
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
 - name: JMSTest
+  version: "1.0"
   gitServerName: kvv
   gitUrl: https://github.com/prabhakarsag
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
+services:
+- serviceName: project.siqa_0404.integrations:refdaf
+  packages:
+  - name: SIQA_0404Project
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+- serviceName: project.siqa_0404.referencedata:ref1
+  packages:
+  - name: SIQA_0404Project
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
